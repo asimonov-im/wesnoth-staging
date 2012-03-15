@@ -1,0 +1,11 @@
+prefix=/home/asimonov/Redman/glib-2.31.20/../install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: GThread
+Description: Thread support for GLib
+Requires: glib-2.0
+Version: 2.31.20
+Libs: -L${libdir} -lgthread-2.0 
+Cflags: -D_REENTRANT
